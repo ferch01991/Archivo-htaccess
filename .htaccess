@@ -1,0 +1,46 @@
+#Evitar que se liste los directorios y archivos
+#IndexIgnore *
+
+#Listar los directorios y archivos
+Options +Indexes
+
+#Denegar el acceso a todas las Ips
+#deny from all
+#excepto a este rango de Ips
+#allow from 172.18.130.0/150
+
+#Denegar el acceso a los archivos
+<Files inicio.html>
+Order allow,deny
+Deny from all
+</files>
+
+#Configurar mis archivos de error 404 y 500
+ErrorDocument 404 /pruebas/ingweb/practicaweb/error/error1.html
+ErrorDocument 500 /pruebas/ingweb/practicaweb/error/error2.html
+
+#Cambiar la extencion de los archivos .php
+AddType application/x-httpd-php .fa
+
+#Validacion de un directorio con usuario y clave del sistema
+#AuthUserFile /home/ferch01991/.htaccess
+#AuthType Basic
+#AuthName "clase1"
+#require valid-user
+
+
+#configuracion de archivo principal de carga
+DirectoryIndex ecuador.html
+
+#Configurar el sistema de Archivos utf-8 para los caracteres especiales
+AddDefaultCharset utf-8
+
+#url que genera el .htaccess
+#http://www.htaccessredirect.net/
+
+#Pagina para comprar dominios para ec en Ecuador Nic.ec
+#Networksolution.com dueños de los dominios.com .net
+#tambien se puede rastrear a quien pertenece el dominio
+
+#Comprar el hosting Amazon, Yamburara, NetworkSolution, Godaddy
+#Amazon servidor dedicado
