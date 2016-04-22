@@ -1,0 +1,6 @@
+<?php  
+	echo "Esto es un mensaje de php <br>";
+	$a = 4;
+	$b = 45;
+	echo $res = $a + $b;
+?>
